@@ -1,0 +1,35 @@
+﻿#geral {
+	/*width: 700px;*/
+	border:1px solid black;
+	margin: 0 auto;
+}
+
+#cabecalho h1, #rodape h2{
+	background: purple ;
+	margin: 0 auto;
+	padding: 10px;
+	color: #fff;
+	font: 18px Tahoma, Arial, Sans-Serif;
+	
+}
+
+#esquerda{
+	width: 150px;
+	background: green;
+	float: left;
+}
+
+#direita{
+	width: 150px;
+	background: gray;
+	float:right ;
+}
+
+#conteudo{
+	background: fuchsia ;
+	margin: 0px 151px;
+}
+
+#conteudo h1{
+	margin: 0 auto ;
+}

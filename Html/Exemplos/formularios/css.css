@@ -1,0 +1,28 @@
+﻿fieldset{
+	width:360px;
+	border:1px solid black;
+	float:left;
+}	
+
+legend{
+	font:bold 16px verdana, arial, tahoma, sans-serif;
+}
+
+label{
+	display:block;
+	width:170px;
+    float:left;
+    font:12 px verdana, arial, tahoma,sans-serif;
+    padding-bottom:10px;
+    position:relative;
+}
+
+label input{
+	width:160px;
+}
+
+label span{
+    font:10px verdana, arial, tahoma,sans-serif;
+    color:gray;
+    position:static;
+}

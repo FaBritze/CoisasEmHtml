@@ -1,0 +1,23 @@
+﻿/*div#pai{ 
+	width: 400px;
+	height: 400px;
+	border: 1px solid red;
+	background: fuchsia ;
+	margin: 100px;
+	position: relative;
+}*/
+p {
+	border: 1px solid black;
+	margin-right: 250px;
+}
+div /*div usado quando utilizado o div#pai*/ {
+	width:200px;
+	height: 200px;
+	border: 1px solid black;
+	background: red;
+	/*position:relative ;se baseia em sua própria posição*/
+	/*position: absolute ;se baseia no ponto 0 do body*/
+	position: fixed ;
+	top: 20px;
+	right: 20px;
+}

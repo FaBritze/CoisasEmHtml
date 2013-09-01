@@ -1,0 +1,40 @@
+﻿#geral{
+	width:700px;
+	margin: 0 auto;
+	border:1px solid black ;
+	background: red;
+}
+
+#cabecalho h1, #rodape h1{
+	background: purple ;
+	margin: 0;
+	padding: 15px;
+	font: bold 18px Verdana, Arial, Tahoma, Sans-Serif;
+	color: white;
+}
+#rodape {
+	clear: both ;
+}
+.sidebar{
+	float: left ;
+	background: green ;
+	width: 150px;
+	font: 12px Verdana, Arial, Tahoma, Sans-Serif;
+}
+
+#conteudo {
+	float: left ;
+	background: silver ;
+	width: 400px;
+}
+
+#conteudo h3{
+	font: bold 18px Verdana, Arial, Tahoma, Sans-Serif;
+}
+#conteudo p{
+	font: 12px Verdana, Arial, Tahoma, Sans-Serif;
+}
+
+#conteudo h3{
+	font: bold 16px Verdana, Arial, Tahoma, Sans-Serif;
+}

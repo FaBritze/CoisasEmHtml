@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Teste Fullscreen</title>
+	<style type="text/css">
+		#teste{
+			margin:0 auto;
+			width:200px;
+			background-color:#CCC;
+			padding: 50px;
+			text-align:center;
+			border-radius:10px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = (function () {
+			document.getElementById('teste').addEventListener("dblclick", function () {
+				if (this.requestFullScreen) {  
+				  this.requestFullScreen();//Quando padronizar só este bastará  
+				} else if (this.mozRequestFullScreen) {  
+				  this.mozRequestFullScreen();//MOZILLA  
+				} else if (this.webkitRequestFullScreen) {  
+				  this.webkitRequestFullScreen();//WEBKIT  
+				}else{
+					alert("Vai-te! Navegador podre!\n\nComeça a usar um Navegador decente... Chrome, Firefox, Opera(nem esse sei se vai funcionar)");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="teste">
+		Duplo clique para Fullscreen...
+		Sem flash...
+	</div>
+</body>
+</html>

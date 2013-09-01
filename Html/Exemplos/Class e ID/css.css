@@ -1,0 +1,35 @@
+﻿.destaque {
+	width: 300px;
+	border: 1px solid black;
+	margin: 0 10px;
+	float: left ;
+}
+
+.destaque h3 {
+	font: bold 17px verdana, arial, tahoma, sans-serif;
+}
+
+.destaque p {
+	font: bold 13px verdana, arial, tahoma, sans-serif;
+}
+
+.destaquevermelho{
+	background: red;
+	color: white ;
+}
+
+#conteudo{
+	width: 500px;
+	margin:10px auto;
+	border: 1px solid black ;
+}
+
+#conteudo p{
+	font: bold 11px verdana, arial, tahoma, sans-serif;
+}
+
+#conteudo h1{
+	font: bold 20px verdana, arial, tahoma, sans-serif;
+	text-decoration: underline;
+	text-align: center;
+	}

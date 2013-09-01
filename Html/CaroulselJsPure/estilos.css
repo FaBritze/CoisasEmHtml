@@ -1,0 +1,8 @@
+*{margin:0;padding: 0;}
+img{border:none;}
+div{
+	margin: 0 auto;
+	overflow: hidden;
+	width:500px;
+	height:500px;
+}

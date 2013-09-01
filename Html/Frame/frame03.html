@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teste</title>
+<script type="text/javascript">
+	var show;
+	function teste(objeto){
+		var fim_virtude = objeto.innerHTML.indexOf("<"),
+			virtude = objeto.innerHTML.substr(0, fim_virtude),
+			lblNumero = objeto.querySelector("label"),
+			quantidade_inicial = lblNumero.innerHTML.replace("+","") || 0,
+			quantidade_final = parseFloat(quantidade_inicial) + 20,
+			sair = false;
+		
+		if(quantidade_final > 100){ 
+			quantidade_final = "100+";
+			sair = true;
+		}
+		lblNumero.innerHTML = quantidade_final;
+		lblNumero.class = "contador";
+		
+		if(sair){
+			lblNumero.parentNode.setAttribute("onclick","");
+		}
+		
+		console.log("veio em!");
+	}
+</script>
+
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;	
+	}
+	ul li label{
+		font-size:9px;
+		border:1px dotted #C5C5C5;
+		border-radius:10px;
+		border-collapse:collapse;
+		background-color:#E4E4E4;
+		padding:3px;	
+		padding-bottom:0;
+		padding-top:0;
+		text-shadow: none;
+		color:#333;
+	}
+	ul {
+		width:110px;
+		margin:0 auto;
+		text-align:center;
+		list-style:none;
+		color:#777;
+		text-shadow: 0px 0px 10px #000;
+	}
+	ul li:hover{
+		color:#FFF;
+		cursor:pointer;
+	}
+	ul li{
+		border-bottom:1px dotted #CCC;
+		padding:5px;
+		outline:none;
+	}
+</style>
+</head>
+
+<body>
+
+<ul>
+	<li onclick="teste(this);">Amor <label></label></li>
+    <li onclick="teste(this);">Humildade <label></label></li>
+    <li onclick="teste(this);">Sabedoria <label></label></li>
+    <li onclick="teste(this);">Conteúdo <label></label></li>
+</ul>
+</body>
+</html>

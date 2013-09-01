@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Bando de dados...</title>
+	<script type="text/javascript" charset="utf-8" src="phonegap.0.9.5.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    function carregou() {
+		 var db = window.openDatabase("BancoDeDados", "1.0", "Exemplo meu querido", 200000);
+        db.transaction(registrarBD, erroCriacao, sucessoCriacao);
+    }
+
+    function registrarBD(tx) {
+        tx.executeSql('DROP TABLE IF EXISTS DEMO');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "Primeira linha")');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Segunda linha")');
+    }
+
+    function executarQuery(tx) {
+        tx.executeSql('SELECT * FROM DEMO', [], sucesso, erroCriacao);
+    }
+
+    function sucesso(tx, results) {
+		var lista = document.getElementById("lista");
+		for(var i = 0; i < results.rows.length; i++){
+			var item = document.createElement("li");
+			item.innerHTML = "data: " + results.rows.item(i).data + " | " + "id: " + results.rows.item(i).id
+			lista.appendChild(item);
+		}
+		var log = document.getElementById("log");
+		log.innerHTML += "\nSelect efetuado com sucesso!";
+		var inf = document.getElementById("informativo");
+		inf.innerHTML = "Resultados:";
+    }
+
+    function erroCriacao(err) {
+		var log = document.getElementById("log");
+		log.innerHTML = "Error processing SQL: " + err.code;
+    }
+
+    function sucessoCriacao() {
+		var log = document.getElementById("log");
+		log.innerHTML = "Banco criado com sucesso...";
+		log.innerHTML += "\nAbrindo o banco para efetuar o select...";
+        var db = window.openDatabase("BancoDeDados", "1.0", "Exemplo meu querido", 200000);
+        db.transaction(executarQuery, erroCriacao);
+    }
+
+    </script>
+  </head>
+  <body onload="carregou()">
+    <h1>Exemplo</h1>
+    <p>Banco de dados</p>
+    <textarea id="log" cols="40" rows="5"></textarea>
+    <br/>
+    <br/>
+    <label id="informativo"></label>
+    <ul style="list-style:none;" id="lista"></ul>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+﻿ul {
+	padding:0px;
+	margin:0px;
+	list-style: none;
+}
+
+ul li{
+	border: 1px solid black;
+	float:left;
+}
+
+ul li a{
+	display:block;
+	border:1px dotted black;
+	padding:5px;
+	font: 13px verdana, arial, tahoma, sans-serif;
+	text-decoration:none;
+	color:#000;
+	margin:1px;
+}
+
+ul li a:hover{
+	border:1px solid red;
+	background:orange;
+	color:black;
+	text-decoration:none;
+}

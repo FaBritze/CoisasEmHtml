@@ -1,0 +1,14 @@
+﻿
+a {
+	display:block;
+	width:400px;
+	height:112px;
+	background: url(logo.gif);
+	overflow:hidden;
+	text-indent:-100px;
+}
+
+
+a:hover{
+	background-position:left -112px;
+}

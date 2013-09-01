@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> Testando o Canvas </title>
+<script type="text/javascript">
+
+var raio = 0,
+	mov = 0,
+	ctx = null,
+	center = null;
+
+espiral = function() {
+    raio += .1;
+    mov += .01;
+    
+    var x = center[0] + Math.sin(mov) * raio,
+		y = center[1] + Math.cos(mov) * raio;
+    
+    ctx.fillRect(x, y, 1, 1);
+};
+
+window.onload = function() {
+
+    var canvas = document.getElementById("mycanvas");
+	canvas.width = document.body.clientWidth - 50;
+	canvas.height = document.body.clientHeight - 50;
+    
+    if(canvas.getContext) {
+        ctx = canvas.getContext("2d");
+        center = [canvas.width / 2, canvas.height / 2];
+        setInterval(espiral, 10);
+    }else{
+			document.write("Seu navegador não implementa as devidas funcionalidades da tag CANVAS...");
+			throw new Error("O metodo getContext do objeto canvas não está implementado...");
+	}
+};
+
+</script>
+</head>
+<body>
+<canvas id="mycanvas"></canvas>
+</body>
+</html>

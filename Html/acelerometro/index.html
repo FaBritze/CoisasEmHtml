@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Acelerometro</title>
+	<script type="text/javascript">
+		get = function(quem){
+			return document.getElementById(quem);
+		}
+		window.onload = function () {
+			window.addEventListener("deviceorientation", function(event) {
+	    		// process event.alpha, event.beta and event.gamma
+	    		get(a).innerHTML = event.alpha
+	    		get(b).innerHTML = event.beta
+	    		get(g).innerHTML = event.gamma
+	    	}, true);
+		}
+	</script>
+</head>
+<body>
+	<h2>Exemplo de acelerometro</h2>
+	<label id="a">a</label>
+	<label id="b">b</label>
+	<label id="g">c</label>
+</body>
+</html>

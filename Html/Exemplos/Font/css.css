@@ -1,0 +1,9 @@
+﻿p {
+	/*font-size:19px;
+	font-family:verdana, arial, tahoma, sans-serif;
+	font-style:italic;
+	font-weight:bold;
+	font-variant:small-caps;*/
+	font:italic bold small-caps 19px verdana, arial, tahoma, sans-serif;/*menor não?*/
+
+}

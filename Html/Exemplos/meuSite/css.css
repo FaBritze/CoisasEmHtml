@@ -1,0 +1,139 @@
+﻿*{margin:0;padding:0;}
+body {background:#9FC5E9;}
+
+#geral{
+	width: 770px;
+	margin:30px auto;
+	background: #CCC;
+	border-top: 7px solid #ACC792;
+}
+hr{display: none;}
+img{border: none;}
+
+/*
+	TOPO:
+	ONDE ESTA O MENU E A LOGO
+*/
+#topo h1{margin: 15px;}
+#topo #menu {
+	border-bottom: 1px solid #FFF;
+	overflow: hidden ;
+	border-top: 1px solid #727272;
+}
+#topo #menu ul {
+	border-bottom: 1px solid #727272;
+	overflow: hidden ;
+	border-top: 1px solid #FFF;
+}
+#topo #menu li{
+	display:inline;
+	list-style: none;	
+}
+#topo #menu li a{
+	font: 16px Trebuchet Ms, Verdana, Arial, Tahoma, Sans-Serif;
+	text-decoration: none;
+	color: #1361A1;
+	float: left ;
+	padding: 5px 15px;
+}
+#topo #menu li a:hover {
+	background: #1361A1;
+	color: #FFF;
+}
+/*
+	CONTEUDO PRINCIPAL
+	A IMAGEM E O TEXTO PRINCIPAIS
+*/
+#chamada-principal{
+	background: #4183B5;
+	overflow:hidden;
+}
+#chamada-principal img{
+	float:left;
+	margin-right: 15px;
+}
+#chamada-principal h2{
+	font: bold 20px Trebuchet Ms, Verdana, Arial, Tahoma, Sans-Serif;
+	color: #FFF;
+	padding: 20px 0 0;
+}
+#chamada-principal p{
+	font: 12px/20px Trebuchet Ms, Verdana, Arial, Tahoma, Sans-Serif;
+	color: #FFF;
+}
+/*
+	CONTEUDO
+	CONTEUDO DO DOCUMENTO
+*/
+#conteudo {
+	width: 405px;
+	float: left;
+	padding: 20px;
+}
+#conteudo h3{
+	font: bold 20px Trebuchet Ms, Verdana, Arial, Tahoma, Sans-Serif;
+	color: #727272;
+	text-transform: uppercase;
+}
+#conteudo h4{
+	font: bold 15px Trebuchet Ms, Verdana, Arial, Tahoma, Sans-Serif;
+	color: #0A3941;
+	text-transform: uppercase;
+}
+#conteudo p{
+	font: 12px/20px Trebuchet Ms, Verdana, Arial, Tahoma, Sans-Serif;
+	color: #727272;
+	margin-bottom: 20px;
+}
+/*
+	SIDEBAR
+	AO LADO DO CONTEUDO AS OPÇÕES DE SEARCH, LISTAGEM DE LINKS IMPORTANTES E LOGIN DO USUÁRIO
+*/
+#sidebar {
+	width:275px;
+	float: right;
+	background: #ACACAC ;
+	padding: 10px;
+}
+#sidebar h5{
+	font: bold 18px Trebuchet Ms, Verdana, Arial, Tahoma, Sans-Serif;
+	color: #0A3941;
+	text-transform: uppercase;
+	margin:15px 0 0;
+}
+#sidebar fieldset {border: none;}
+#sidebar label{font: 12px Verdana;}
+#sidebar ul li{list-style: none;}
+#sidebar ul li a{
+	font: 12px verdana, arial, tahoma;
+	color: black;
+}
+#sidebar input{
+	border:none;
+	width: 255px;
+	padding: 7px;
+}
+/*
+	RODAPE
+	RODAPE DA PAGINA POSSUI A LOGO, ENDEREÇO E TELEFONE
+*/
+#rodape {
+	clear: both;
+	background:#9FC5E9;
+	border-top: 5px solid #727272;
+}
+#rodape a.logo-rodape{
+	margin: 15px;
+	float: left;
+}
+#rodape address{
+	float: right;
+	text-align: right;
+	padding: 15px;
+	font: 13px verdana, arial, tahoma;
+	color:#707977 ;
+}
+#rodape address strong{
+	display: block;
+	font: bold 18px verdana, arial, tahoma;
+}

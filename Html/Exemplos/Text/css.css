@@ -1,0 +1,10 @@
+﻿p {
+	color:red;
+	/*letter-spacing:30px;
+	word-spacing:20px;
+	text-decoration:line-through overline underline;
+	text-transform:capitalize;*/
+	width:300px;
+	text-align:center;
+	line-height: 20px;
+}

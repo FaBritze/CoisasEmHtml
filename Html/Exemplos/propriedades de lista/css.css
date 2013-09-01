@@ -1,0 +1,9 @@
+﻿ul {
+	font:13px verdana;
+	list-style:none;
+}
+
+ul li{
+	background:silver;
+	padding:0 0 0 15px;
+}
