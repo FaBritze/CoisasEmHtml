@@ -1,0 +1,32 @@
+*{ margin:0; padding:0; }
+body{
+	background-image:url(../img/rosas2.jpg);
+	background-color:#FFF;
+	background-repeat: no-repeat;
+	color:#FFF;	
+}
+
+h1, p, h3{
+	background-color:#CCC;
+	padding:15px;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 50px;
+}
+
+h1{
+	color:#FFF;
+	text-shadow: -1px 0px 10px #000;
+}
+p{
+	color:#fff;
+	text-shadow: -1px 0px 5px #000;
+	font-size:25px; 
+	margin:10px;	
+	margin-left:50px;
+}
+h3{
+	color:#fff;
+	text-shadow:-1px 0px 5px #FF0000;
+	display:block;
+	text-align:center;
+}
